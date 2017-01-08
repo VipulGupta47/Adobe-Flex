@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<swiz:BeanProvider xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:swiz="http://swiz.swizframework.org"
+				   xmlns:s="library://ns.adobe.com/flex/spark" xmlns:controllers="controllers.*"				   
+				   >
+	<fx:Script>
+		<![CDATA[
+			import model.BaseComponentModel;
+			
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<controllers:ApplicationController id="applicationController"/>
+		<swiz:Prototype id="baseComponentModel" type="{BaseComponentModel}"/>
+		
+		
+	</fx:Declarations>
+</swiz:BeanProvider>

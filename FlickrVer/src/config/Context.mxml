@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<swiz:Swiz xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns:s="library://ns.adobe.com/flex/spark"
+		   xmlns:swiz="http://swiz.swizframework.org" xmlns:config="config.*" 
+		   >
+	
+	<swiz:config>
+		<swiz:SwizConfig>
+			<swiz:eventPackages>
+				<fx:Array>
+					<fx:String>events.*</fx:String>
+					<fx:String>flash.events</fx:String>
+				</fx:Array>
+			</swiz:eventPackages>
+		</swiz:SwizConfig>
+	</swiz:config>
+
+	<swiz:beanProviders>
+		<config:Bean/>
+	</swiz:beanProviders>
+
+	<!--UNCOMMENT BELOW TO SEE SWIZ TRACE STATEMENTS-->
+	<!--<swiz:loggingTargets>
+		<swiz:SwizTraceTarget id="myTraceTarget" />
+	</swiz:loggingTargets>-->
+
+</swiz:Swiz>

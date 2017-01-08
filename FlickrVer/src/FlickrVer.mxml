@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:view="view.*"
+					   width="100%" height="100%" xmlns:config="config.*">
+	<fx:Declarations>
+		<config:Context/>
+	</fx:Declarations>
+	<s:VGroup requestedRowCount="2" width="100%" height="100%">
+		<view:TopComponent width="100%" height="20%"/>
+		<view:BaseComponent width="100%"/>
+	</s:VGroup>
+</s:WindowedApplication>

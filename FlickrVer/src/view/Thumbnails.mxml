@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+
+	<fx:Script>
+		<![CDATA[
+			import model.BaseComponentModel;
+			
+			[Inject]
+			public var baseComponentModel:BaseComponentModel;	
+			
+		
+			
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:HGroup requestedColumnCount="4" verticalAlign="middle" gap="20">
+		<mx:Image id="t1" source="assets/FlickrLogo.png" 
+				  mouseOver="{baseComponentModel.image1_mouseOverHandler(event)}"
+				  mouseOut="{baseComponentModel.image1_mouseOutHandler(event)}"
+				  click="{baseComponentModel.t1_clickHandler(event)}"/>
+		<mx:Image id="t2" source="assets/logo.jpg" 
+				  mouseOver="{baseComponentModel.image1_mouseOverHandler(event)}"
+				  mouseOut="{baseComponentModel.image1_mouseOutHandler(event)}"
+				  click="{baseComponentModel.t2_clickHandler(event)}"/>
+		<!--<mx:Image id="t3" source="assets/FlickrLogo.png" 
+				  mouseOver="{baseComponentModel.image1_mouseOverHandler(event)}"
+				  mouseOut="{baseComponentModel.image1_mouseOutHandler(event)}"
+				  click="{baseComponentModel.t3_clickHandler(event)}"/>-->
+		<s:Label id="l1" text="The Tour" color="#0000FF" fontSize="16" fontWeight="bold"
+				 mouseOver="{baseComponentModel.l1_mouseOverHandler(event)}"
+				 mouseOut="{baseComponentModel.l1_mouseOutHandler(event)}"/>
+		<!--<s:Label id="l2" text="Explore" color="#0000FF" fontSize="16" fontWeight="bold"
+				  mouseOver="{baseComponentModel.l1_mouseOverHandler(event)}"
+				  mouseOut="{baseComponentModel.l1_mouseOutHandler(event)}"/>-->
+		<s:Label id="l3" text="Sign Up" color="#0000FF" fontSize="16" fontWeight="bold"
+				  mouseOver="{baseComponentModel.l1_mouseOverHandler(event)}"
+				  mouseOut="{baseComponentModel.l1_mouseOutHandler(event)}"/>
+	</s:HGroup>
+</s:Group>
